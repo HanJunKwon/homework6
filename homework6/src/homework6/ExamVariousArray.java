@@ -25,6 +25,11 @@ public class ExamVariousArray {
 				new StudentScore().StuScore();
 			else if(sel==4)
 				new AptPersonCount().pCount();
+			else if(sel==5)
+				new OnlyNumber().InputNumber();
+			else if(sel==6)
+				System.exit(0);
+			else continue;
 		}
 	}
 }
