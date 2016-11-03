@@ -22,6 +22,7 @@ public class OnlyNumber {
 				continue;
 			}
 		}
+		
 		System.out.println("============================");
 		for(int i=9; i>=0; --i)
 			System.out.printf("%d번째 숫자는 %d입니다.\n", i+1, number[i]);
