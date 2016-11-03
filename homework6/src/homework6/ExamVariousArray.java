@@ -21,10 +21,10 @@ public class ExamVariousArray {
 				new SecondMax().Second();
 			else if(sel==2)
 				new AvgScore().Avg();
-				
+			else if(sel==3)
+				new StudentScore().StuScore();
+			else if(sel==4)
+				new AptPersonCount().pCount();
 		}
-		
-		
 	}
-
 }
