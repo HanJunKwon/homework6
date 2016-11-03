@@ -16,6 +16,7 @@ public class StudentScore {
 				student_report[i][3]+=student_report[i][j];
 			}
 		}
+		
 		Subject_SumScore();
 		
 		korSumAvg_Print();
