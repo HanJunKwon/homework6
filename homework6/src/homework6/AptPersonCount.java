@@ -41,6 +41,7 @@ public class AptPersonCount {
 			System.out.printf("50%d호에 살고 있는 사람의 숫자 : ", i+1);
 			fifthFool[i]=sc.nextInt();
 		}
+		
 		FloorSum();
 		AptSumPerson();
 		LineSum();
