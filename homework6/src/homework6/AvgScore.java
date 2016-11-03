@@ -22,7 +22,7 @@ public class AvgScore {
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
 				}
-				else continue;
+				else continue; 
 			}
 		}
 		
