@@ -25,6 +25,7 @@ public class SecondMax {
 				sMax_index=i;
 			}
 		}
+		
 		System.out.println("두 번쨰로 큰 수는 "+(sMax_index+1)+"번째수 "+s_max+"입니다");
 	}
 }
