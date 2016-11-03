@@ -15,6 +15,7 @@ public class AvgScore {
 			System.out.print(i+1+"번 심사 점수 입력:");
 			arr[i] = sc.nextDouble();
 		}
+		
 		for(int i=0; i<10; ++i){
 			for(int j=0; j<9-i; ++j){
 				if(arr[j]<arr[j+1]){
