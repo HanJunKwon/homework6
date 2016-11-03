@@ -16,9 +16,18 @@ public class AvgScore {
 			arr[i] = sc.nextDouble();
 		}
 		for(int i=0; i<10; ++i){
-			for(int j=i; j<10; ++j){
-				if(arr[i]>arr[i+1])
+			for(int j=0; j<9-i; ++j){
+				if(arr[j]<arr[j+1]){
+					double temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+				else continue; 
 			}
 		}
+		
+		for(int i=1; i<9; ++i)
+			sum+=arr[i];
+		System.out.printf("가장 큰 저매수와 가장 작은 점수를 제외한\n8개의 점수 평균은 %.1f입니다\n",sum/8);
 	}
 }
