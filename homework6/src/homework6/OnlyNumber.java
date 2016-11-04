@@ -16,11 +16,8 @@ public class OnlyNumber {
 			int n = sc.nextInt();
 			if (RedundancyCheck(count, n))
 				number[count++] = n;
-
-			else {
-				System.out.println("잘못 입력하였습니다. 다시 입력하세요");
+			else 
 				continue;
-			}
 		}
 		
 		System.out.println("============================");
@@ -30,8 +27,10 @@ public class OnlyNumber {
 
 	public boolean RedundancyCheck(int count, int n) {
 		for (int i = 0; i < count + 1; ++i) {
-			if (number[i] == n)
+			if (number[i] == n){
+				System.out.println("잘못 입력하였습니다. 다시 입력하세요");
 				return false;
+			}
 		}
 		return true;
 	}
