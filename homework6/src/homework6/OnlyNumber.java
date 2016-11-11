@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class OnlyNumber {
 	int[] number = new int[10];
-
+	int count=0;
+	
 	public void InputNumber() {
-		int count = 0;
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("1~100사이의 숫자를 입력하세요");
@@ -14,10 +14,8 @@ public class OnlyNumber {
 		while (count<10) {
 			System.out.printf("%d번째 숫자 : ",count+1);
 			int n = sc.nextInt();
-			if (RedundancyCheck(count, n))
+			if (RedundancyCheck(n))
 				number[count++] = n;
-			else 
-				continue;
 		}
 		
 		System.out.println("============================");
@@ -25,9 +23,9 @@ public class OnlyNumber {
 			System.out.printf("%d번째 숫자는 %d입니다.\n", i+1, number[i]);
 	}
 
-	public boolean RedundancyCheck(int count, int n) {
+	public boolean RedundancyCheck(int n) {
 		for (int i = 0; i < count + 1; ++i) {
-			if (number[i] == n){
+			if (number[i] == n || n<1 || n>100){
 				System.out.println("잘못 입력하였습니다. 다시 입력하세요");
 				return false;
 			}
